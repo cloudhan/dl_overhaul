@@ -1,10 +1,4 @@
 import logging
-from multiprocessing import Pool
-from torch._C import device
-
-from torch.nn.modules import pooling
-from torch.nn.modules.activation import ReLU, Sigmoid
-from torch.nn.modules.batchnorm import BatchNorm1d
 logging.basicConfig(level=logging.DEBUG)
 
 import sys
