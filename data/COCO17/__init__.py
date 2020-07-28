@@ -17,16 +17,16 @@ def s3_handler(filename: str, filepath: str):
 
 
 annotations = ensure_file("annotations_trainval2017.zip",
-                          this_dir.joinpath("annotations_trainval2017.zip"),
+                          this_dir.joinpath("downloads/annotations_trainval2017.zip"),
                           "f4bbac642086de4f52a3fdda2de5fa2c",
                           s3_handler)
 
 val2017 = ensure_file("val2017.zip",
-                      this_dir.joinpath("val2017.zip"),
+                      this_dir.joinpath("downloads/val2017.zip"),
                       "442b8da7639aecaf257c1dceb8ba8c80",
                       s3_handler)
 
 train2017 = ensure_file("train2017.zip",
-                        this_dir.joinpath("train2017.zip"),
+                        this_dir.joinpath("downloads/train2017.zip"),
                         "cced6f7f71b7629ddf16f17bbcfab6b2",
                         s3_handler)
